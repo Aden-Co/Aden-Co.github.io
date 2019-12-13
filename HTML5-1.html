@@ -13,6 +13,7 @@ Time: <input type="text" name="Time"><br>
 
 </form> 
 <button onclick="myFunction()">Is he free?</button>
+<p id="p1"><b></b></p>
 
 
     <script>
@@ -37,6 +38,7 @@ Time: <input type="text" name="Time"><br>
                     ];
         var randomItem = Marr[Math.floor(Math.random()*Marr.length)];
         alert(randomItem);
+	document.getElementById("p1").innerHTML = randomItem;
         }
         
         
